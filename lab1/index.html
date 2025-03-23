@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zaklęta Strona</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+    <h1>Zaklęta Strona</h1>
+    <div class="header-buttons">
+        <button id="loginBtn">Zaloguj</button>
+        <button id="cartBtn">Koszyk (0)</button>
+    </div>
+</header>
+
+<section class="filters">
+    <h2>Filtruj książki</h2>
+    <form id="filterForm">
+        <label>Cena max: <input type="number" name="price" /></label>
+        <label>Okładka:
+            <select name="cover">
+                <option value="">Dowolna</option>
+                <option value="twarda">Twarda</option>
+                <option value="miękka">Miękka</option>
+            </select>
+        </label>
+        <label>Ilość stron min: <input type="number" name="pages" /></label>
+        <label>Autor: <input type="text" name="author" /></label>
+        <label>Słowo kluczowe: <input type="text" name="keyword" /></label>
+        <button type="submit">Szukaj</button>
+    </form>
+</section>
+
+<section class="book-list">
+    <h2>Dostępne książki</h2>
+    <ul id="books">
+        <li>
+            <h3>Wiedźmin: Ostatnie Życzenie</h3>
+            <p>Autor: Andrzej Sapkowski | 350 stron | Okładka: twarda | Cena: 39.99 zł</p>
+            <button>Dodaj do koszyka</button>
+        </li>
+        <li>
+            <h3>Mały Książę</h3>
+            <p>Autor: Antoine de Saint-Exupéry | 120 stron | Okładka: miękka | Cena: 19.99 zł</p>
+            <button>Dodaj do koszyka</button>
+        </li>
+        <li>
+            <h3>Kosiarze</h3>
+            <p>Autor: Neal Shusterman | 440 stron | Okładka: twarda | Cena: 44.99 zł</p>
+            <button>Dodaj do koszyka</button>
+        </li>
+        <li>
+            <h3>Małe kobietki</h3>
+            <p>Autor: Louisa May Alcott | 500 stron | Okładka: miękka | Cena: 34.99 zł</p>
+            <button>Dodaj do koszyka</button>
+        </li>
+        <li>
+            <h3>No Longer Human</h3>
+            <p>Autor: Osamu Dazai | 280 stron | Okładka: miękka | Cena: 29.99 zł</p>
+            <button>Dodaj do koszyka</button>
+        </li>
+    </ul>
+
+</section>
+
+<section class="add-book">
+    <div class="center-button">
+        <button id="addBookBtn">Dodaj nową książkę</button>
+    </div>
+</section>
+</body>
+</html>

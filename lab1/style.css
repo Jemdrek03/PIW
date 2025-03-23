@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-buttons button {
+    margin-left: 10px;
+}
+
+section {
+    padding: 1em;
+    margin: 1em;
+    background: white;
+    border-radius: 8px;
+}
+
+.filters form label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.book-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.book-list li {
+    border-bottom: 1px solid #ccc;
+    padding: 1em 0;
+}
+
+.center-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+

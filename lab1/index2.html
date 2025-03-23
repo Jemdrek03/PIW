@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dodaj Książkę - Zaklęta Strona</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <h1>Dodaj Książkę</h1>
+</header>
+
+<section class="add-book">
+  <h2>Formularz dodawania książki</h2>
+  <form id="addBookForm">
+    <label>Tytuł:
+      <input type="text" placeholder="Tytuł" required />
+    </label>
+    <label>Autor:
+      <input type="text" placeholder="Autor" required />
+    </label>
+    <label>Liczba stron:
+      <input type="number" placeholder="Liczba stron" required />
+    </label>
+    <label>Okładka:
+      <select required>
+        <option value="twarda">Twarda</option>
+        <option value="miękka">Miękka</option>
+      </select>
+    </label>
+    <label>Cena (zł):
+      <input type="number" placeholder="Cena" required />
+    </label>
+    <label>Opis/Słowa kluczowe:
+      <input type="text" placeholder="Opis/Słowa kluczowe" />
+    </label>
+    <button type="submit">Dodaj książkę</button>
+  </form>
+</section>
+</body>
+</html>

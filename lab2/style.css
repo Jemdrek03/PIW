@@ -1,0 +1,122 @@
+/* Główna karta zadania (kafelek) */
+.task-card {
+    width: 100%;
+    max-width: 350px;
+    min-height: 180px;
+    padding: 1.2rem;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Kolory priorytetów */
+.normal {
+    background-color: #f8f9fa;    /* Jasnoszary */
+}
+
+.important {
+    background-color: #fff3cd;    /* Żółty */
+}
+
+.urgent {
+    background-color: #f8d7da;    /* Czerwony */
+}
+
+/* Przycisk zamykania (X) w prawym górnym rogu */
+.task-card .btn-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/*  Tytuł zadania */
+.task-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    cursor: pointer;              /* Rączka - kliknięcie = wykonanie */
+}
+
+/*  Opis zadania */
+.task-desc {
+    font-size: 1rem;
+    color: #333;
+    flex-grow: 1;                 /* Rozciąga się na dostępną przestrzeń */
+}
+
+/*  Styl dla ukończonych zadań */
+.completed .task-title {
+    text-decoration: line-through; /* Przekreślenie */
+    opacity: 0.7;
+}
+
+/*  Informacja o wykonaniu zadania */
+.done-info {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+/* Przekreślenie opisu przy ukończonym zadaniu */
+.completed .task-desc,
+.completed-text {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+/* Wyszarzenie całego kafelka */
+.completed {
+    opacity: 0.75;
+}
+
+/*  Ikona checka (na lewo od tytułu) */
+.check-icon {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Animacja przy pojawieniu się */
+.show-check {
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+/*  Kręcące się kółko (loader) */
+.loader-icon {
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 2px solid #999;
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    animation: spin 0.6s linear infinite;
+    margin-right: 0.5rem;
+}
+
+/*  Check – pojawia się po loaderze */
+.check-icon {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Animacja pojawiania się checka */
+.show-check {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Animacja obrotu */
+@keyframes spin {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

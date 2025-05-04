@@ -10,5 +10,10 @@ export default [
         path: "/new",
         file: "./routes/new.jsx",
         element: React.createElement(React.lazy(() => import("./routes/new.jsx")))
+    },
+    {
+        path: "/Login",
+        file: "./routes/Login.jsx",
+        element: React.createElement(React.lazy(() => import("./routes/Login.jsx")))
     }
 ];
